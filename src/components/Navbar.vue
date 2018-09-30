@@ -1,33 +1,33 @@
 <template>
-    <nav>
-        <div class="wrapper">
+    <div class="wrapper">
+        <nav class="nav">
             <div class="logo">
-                <h4>LOgo Here</h4>
+                <img src="@/assets/images/logo_use.png" alt="">
             </div>
-            <div class="menu">
-                <li>
-                    <router-link to="/">Home</router-link>
-                </li>
-                <li>
-                    <router-link to="/employers">Employers</router-link>
-                </li>
-                <li>
-                    <router-link to="/jobseekers">Jobseekers</router-link>
-                </li>
-                <li>
-                    <router-link to="/contacts">Contacts</router-link>
-                </li>
-                <span>
+                <ul>
                     <li>
-                        <router-link to="/admin-login">
-                            Admin Login
-                        </router-link>
+                        <router-link to="/">Home</router-link>
                     </li>
-                </span>
-            </div>
-        </div>
-        <router-view/>
-    </nav>
+                    <li>
+                        <router-link to="/employers">Employers</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/jobseekers">Jobseekers</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/contacts">Contacts</router-link>
+                    </li>
+                    <span>
+                        <li>
+                            <router-link to="/admin-login">
+                                Admin Login
+                            </router-link>
+                        </li>
+                    </span>
+                </ul>
+        </nav>
+        <router-view />
+    </div>
 
 </template>
 
@@ -37,22 +37,29 @@ export default {
 };
 </script>
 
-<style  scoped>
-.wrapper {
+<style scoped>
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  list-style: none;
-  background-color: var(--offwhite);
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.menu {
+.logo img {
+  width: 60px !important;
+  height: 58px !important;
+  margin-left: 10px;
+  /* display: block !important; */
+  text-indent: -9999px !important;
+}
+
+ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
+  list-style: none;
 }
 
 span {
@@ -72,12 +79,12 @@ li {
   margin-right: 30px;
 }
 
-.menu a {
+ul a {
   text-decoration: none;
   color: var(--grey);
 }
 
-.menu a.router-link-exact-active {
+ul a.router-link-exact-active {
   color: var(--dark-blue);
 }
 </style>

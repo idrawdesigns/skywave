@@ -35,14 +35,14 @@ p {
   font-weight: normal;
   text-transform: none;
   font-size: 1em;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 :root {
   --light-blue: #14c8e5;
   --magenta: #e51498;
   --dark-blue: #146fe5;
   --mypurple: #a714e5;
-  --offwhite: #e0d8e3;
+  --offwhite: #e4e2e5;
   --grey: #4f4d50;
 }
 

@@ -75,7 +75,7 @@ img {
 .req-staff {
   grid-area: req-staff;
   min-height: 400px;
-  background: var(--dark-blue);
+  background: var(--light-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
